@@ -96,7 +96,7 @@ class _CariselleHomePageState extends State<CariselleHomePage> {
                             child: GlassChip(
                               selected: selected == entry.key,
                               label: Text(entry.value.label),
-                              onSelected: (_) => setState(() => selected = entry.key),
+                              onTap: () => setState(() => selected = entry.key),
                             ),
                           ))
                       .toList(),
@@ -216,7 +216,7 @@ class _HeroCopy extends StatelessWidget {
               runSpacing: 12,
               children: [
                 GlassButton(
-                  onPressed: () {},
+                  onTap: () {},
                   child: const Row(
                     mainAxisSize: MainAxisSize.min,
                     children: [
@@ -227,7 +227,7 @@ class _HeroCopy extends StatelessWidget {
                   ),
                 ),
                 GlassButton(
-                  onPressed: () {},
+                  onTap: () {},
                   child: const Row(
                     mainAxisSize: MainAxisSize.min,
                     children: [
@@ -278,7 +278,7 @@ class _HeroGlassDevice extends StatelessWidget {
                   ),
                   GlassIconButton(
                     icon: const Icon(Icons.auto_graph_rounded),
-                    onPressed: () {},
+                    onTap: () {},
                   ),
                 ],
               ),
@@ -537,7 +537,7 @@ class _LogoMark extends StatelessWidget {
     return GlassContainer(
       width: size,
       height: size,
-      borderRadius: BorderRadius.circular(size * 0.34),
+      radius: size * 0.34,
       quality: GlassQuality.premium,
       child: Center(
         child: Text(

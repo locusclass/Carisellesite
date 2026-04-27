@@ -1,0 +1,11 @@
+{
+  "name": "Cariselle Technologies",
+  "short_name": "Cariselle",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#05060a",
+  "theme_color": "#0b1020",
+  "description": "Premium technology firm building digital products, platforms, and scalable systems.",
+  "orientation": "portrait-primary",
+  "prefer_related_applications": false
+}
